@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulario con Variantes de Input</title>
+		<link rel="stylesheet" href="styles.css" />
+		<!-- Agrega tu archivo CSS aquí si lo tienes -->
+	</head>
+	<body>
+		<form action="" method="post">
+			<!-- Botón -->
+			<input type="button" value="Haz clic" />
+			<hr />
+			<!-- Campo de texto -->
+			<input type="text" id="texto" name="texto" placeholder="Texto" />
+			<hr />
+			<!-- Casilla de verificación -->
+			<input type="checkbox" id="check" name="check" />
+			<label for="check">Acepto los términos y condiciones</label>
+			<hr />
+			<!-- Selector de color -->
+			<input type="color" id="color" name="color" />
+			<hr />
+			<!-- Selector de fecha -->
+			<input type="date" id="fecha" name="fecha" />
+			<hr />
+			<!-- Selector de fecha y hora -->
+			<input type="datetime-local" id="fecha-hora" name="fecha-hora" />
+			<hr />
+			<!-- Campo de correo electrónico -->
+			<input
+				type="email"
+				id="email"
+				name="email"
+				placeholder="Correo electrónico" />
+			<hr />
+			<!-- Carga de archivos -->
+			<input type="file" id="archivo" name="archivo" accept=".jpg, .png" />
+			<hr />
+			<!-- Campo oculto -->
+			<input type="hidden" id="secreto" name="secreto" value="valor-secreto" />
+			<hr />
+			<!-- Botón de imagen -->
+			<input type="image" src="boton-imagen.png" alt="Botón de imagen" />
+			<hr />
+			<!-- Selector de mes -->
+			<input type="month" id="mes" name="mes" />
+			<hr />
+			<!-- Campo numérico -->
+			<input
+				type="number"
+				id="numero"
+				name="numero"
+				min="1"
+				max="10"
+				step="1" />
+			<hr />
+			<!-- Campo de contraseña -->
+			<input
+				type="password"
+				id="contrasena"
+				name="contrasena"
+				placeholder="Contraseña" />
+			<hr />
+			<!-- Radio buttons -->
+			<input type="radio" id="opcion1" name="opcion" value="opcion1" />
+			<label for="opcion1">Opción 1</label>
+			<input type="radio" id="opcion2" name="opcion" value="opcion2" />
+			<label for="opcion2">Opción 2</label>
+			<hr />
+			<!-- Rango -->
+			<input type="range" id="rango" name="rango" min="0" max="100" step="1" />
+			<hr />
+			<!-- Campo de búsqueda -->
+			<input
+				type="search"
+				id="busqueda"
+				name="busqueda"
+				placeholder="Buscar..." />
+			<hr />
+			<!-- Campo de teléfono -->
+			<input type="tel" id="telefono" name="telefono" placeholder="Teléfono" />
+			<hr />
+			<!-- Campo de tiempo -->
+			<input type="time" id="tiempo" name="tiempo" />
+			<hr />
+			<!-- Campo de URL -->
+			<input
+				type="url"
+				id="url"
+				name="url"
+				placeholder="https://www.ejemplo.com" />
+			<hr />
+			<!-- Semáforo -->
+			<input
+				type="range"
+				id="semaforo"
+				name="semaforo"
+				min="0"
+				max="2"
+				step="1" />
+			<hr />
+			<!-- Campo de semana -->
+			<input type="week" id="semana" name="semana" />
+			<hr />
+			<!-- Botón de envío -->
+			<input type="submit" value="Enviar" />
+		</form>
+	</body>
+</html>

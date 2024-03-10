@@ -1,0 +1,12 @@
+/* Damos estructura al contenido */
+h1 {
+	text-align: center;
+}
+.contanier {
+	margin: 0 auto;
+	width: 700px;
+}
+label,
+input {
+	margin: 10px;
+}

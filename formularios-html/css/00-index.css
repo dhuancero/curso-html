@@ -55,3 +55,19 @@ a {
 a:hover {
 	text-decoration: underline;
 }
+
+.volver {
+	color: white;
+	text-decoration: none;
+	background-color: #04aa6d;
+	padding: 10px;
+	margin: 10px;
+	border-radius: 5px;
+}
+.volver:hover {
+	color: #04aa6d;
+	background-color: white;
+	text-decoration: none;
+	border-color: #04aa6d;
+	border: 1px solid;
+}

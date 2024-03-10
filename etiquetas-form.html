@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/etiquetas.css" />
+		<title>Etiquetas</title>
+	</head>
+	<body>
+		<!-- PARA CREAR UN FORMULARIO ES NECESARIO LA ETIQUETAS <form></form> -->
+		<main class="contanier">
+			<h1>MI PRIMER FORMULARIO</h1>
+			<!-- ?
+        ATRIBUTOS:
+        -> action: El destino hacia donde enviar los datos.
+        -> method: Especifica el método por el que se envian los datos. POST y GET
+        -> mane: Especifica el nombre del elemento. 
+        -> enctype: Especifica cómo se deben codificar los datos.
+       -->
+			<form action="" method="POST" enctype="multipart/form-data">
+				<!-- 
+          Atributos comunes de una etiqueta input
+          type="text"
+					name=""
+					id="name"
+					class=""
+					placeholder=""
+					required
+					alt=""
+					disabled 
+         -->
+
+				<label for="text">Texto:</label>
+				<input
+					type="text"
+					name="text"
+					id="text"
+					class="classText"
+					placeholder="Aquí va un texto"
+					required />
+				<hr />
+
+				<label for="password">Password:</label>
+				<input
+					type="password"
+					name="password"
+					id="password"
+					placeholder="Aquí va una contraseña"
+					required />
+				<hr />
+
+				<label for="email">Correo electrónico:</label>
+				<input
+					type="email"
+					name="email"
+					id="email"
+					placeholder="Introduce tu correo"
+					required />
+				<hr />
+
+				<label for="checkbox">Casilla de verificación</label>
+				<input type="checkbox" name="checkbox" id="checkbox" required />
+				<hr />
+
+				<label for="radio">Radio</label>
+				<input type="radio" name="radio" id="radio" value="uno" />
+				<input type="radio" name="radio" id="radio" value="dos" />
+				<input type="radio" name="radio" id="radio" value="tres" />
+				<hr />
+
+				<label for="number">Número</label>
+				<input
+					type="number"
+					name="number"
+					id="number"
+					max="100"
+					min="0"
+					value="0" />
+				<hr />
+
+				<label for="phone">Teléfono</label>
+				<input
+					type="tel"
+					name="phone"
+					id="phone"
+					maxlength="9"
+					minlength="9"
+					placeholder="Introduce tu teléfono" />
+				<hr />
+
+				<label for="file">Adjuntar archivo</label>
+				<input type="file" name="file" id="file" required multiple />
+				<hr />
+
+				<label for="search">Búsqueda</label>
+				<input
+					type="search"
+					name="search"
+					id="search"
+					placeholder="¿Qué quieres buscar?" />
+				<hr />
+
+				<label for="datetime">Fechas y horas</label>
+				<input type="date" name="" id="" />
+				<input type="time" name="" id="" />
+				<input type="week" name="" id="" />
+				<input type="month" name="" id="" />
+				<hr />
+
+				<!-- Botones  -->
+				<input type="submit" value="Enviar" />
+				<input
+					type="reset"
+					value="Reiniciar"
+					onclick="alert('Se ha reiniciado el formulario')" />
+			</form>
+		</main>
+	</body>
+</html>
