@@ -1,0 +1,5 @@
+# Ignorar el archivo .vscode
+.vscode
+
+# Ignorar el archivo ejemplo.html
+ejemplo.html
