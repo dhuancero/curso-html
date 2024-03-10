@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulario de Pedido</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Formulario de Pedido</h1>
+			<form action="procesar_pedido.php" method="post">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" required />
+				<label for="producto">Producto:</label>
+				<input type="text" id="producto" name="producto" required />
+				<label for="cantidad">Cantidad:</label>
+				<input type="number" id="cantidad" name="cantidad" min="1" required />
+				<label for="direccion">Dirección de Envío:</label>
+				<input type="text" id="direccion" name="direccion" required />
+				<label for="telefono">Teléfono:</label>
+				<input type="text" id="telefono" name="telefono" />
+				<label for="metodo_pago">Método de Pago:</label>
+				<input type="radio" id="metodo_pago" name="metodo_pago" required />
+				<label for="metodo_pago">Efectivo:</label>
+				<input type="radio" id="metodo_pago" name="metodo_pago" required />
+				<label for="metodo_pago">Tarjeta:</label>
+				<input type="radio" id="metodo_pago" name="metodo_pago" required />
+				<label for="metodo_pago">Bizum:</label>
+				<br /><br />
+				<input type="submit" value="Realizar Pedido" />
+			</form>
+		</div>
+	</body>
+</html>

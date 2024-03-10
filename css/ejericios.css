@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+
+* {
+	margin: 0;
+	padding: auto;
+	box-shadow: none;
+	font-family: "Source Code Pro", monospace;
+}
+body {
+	margin: auto;
+	text-align: center;
+	padding: 50px;
+}
+h1 {
+	padding-bottom: 20px;
+	text-transform: uppercase;
+	color: brown;
+}
+
+.container {
+	text-align: justify;
+
+	margin: auto;
+	padding: 50px;
+	/* width: 900px; */
+	display: flex;
+	gap: 20px;
+	justify-content: space-around;
+
+	flex-direction: row;
+}
+.comun {
+	flex: 1 1 0;
+	text-align: center;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	border-radius: 10px;
+	color: wheat;
+	font-weight: bold;
+}
+
+.uno ul,
+.dos ul,
+.tres ul {
+	text-align: justify;
+	margin-bottom: 30px;
+}
+
+.uno {
+	background-color: chocolate;
+}
+.dos {
+	background-color: blueviolet;
+}
+.tres {
+	background-color: orangered;
+}
+.comun h2 {
+	color: whitesmoke;
+	padding-bottom: 20px;
+	text-align: center;
+}
+
+.button {
+	border: solid 1px snow;
+	border-radius: 5px;
+	margin-top: 50px auto;
+	background-color: snow;
+	text-align: center;
+	justify-content: center;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.button:hover {
+	background-color: brown;
+	color: white;
+}
+.button a {
+	text-decoration: none;
+	padding: 10px;
+}
+
+.button a:hover {
+	color: white;
+}
