@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/04-encuesta.css" />
+		<title>Formulario de Satisfacción</title>
+	</head>
+	<body>
+		<h1>Encuesta de Satisfacción</h1>
+		<form action="encuesta.php" method="post">
+			<p>¿Cómo calificarías nuestro servicio?</p>
+			<input
+				type="radio"
+				id="excelente"
+				name="calificacion"
+				value="excelente" />
+			<label for="excelente">Excelente</label>
+			<input type="radio" id="bueno" name="calificacion" value="bueno" />
+			<label for="bueno">Bueno</label>
+			<input type="radio" id="regular" name="calificacion" value="regular" />
+			<label for="regular">Regular</label>
+			<input type="radio" id="malo" name="calificacion" value="malo" />
+			<label for="malo">Malo</label>
+			<button type="submit">Enviar</button>
+		</form>
+		<button type="button"><a href="index.html">VOLVER</a></button>
+	</body>
+</html>
