@@ -1,8 +1,10 @@
 # Ignorar el archivo .vscode
 .vscode
 
-# Ignorar el archivo ejemplo.html
+# Ignorar el archivo html
 ejemplo.html
+cambios.html
+
 
 # Ignorar el archivo prueba.md
 prueba.md

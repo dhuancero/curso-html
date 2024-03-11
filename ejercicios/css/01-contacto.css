@@ -9,6 +9,7 @@ body {
 	background-color: #fff;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
 }
 label {
 	font-weight: bold;
@@ -29,7 +30,24 @@ input[type="submit"] {
 	padding: 10px 20px;
 	cursor: pointer;
 	border-radius: 3px;
+	text-align: center;
+	/* margin: auto; */
+	width: 50%;
 }
 input[type="submit"]:hover {
 	background-color: #0056b3;
+}
+
+.fieldset {
+	padding: 50px;
+	margin: 10px;
+	text-align: left;
+}
+
+.form-contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
 }

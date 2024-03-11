@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulario de Pedido</title>
+		<link rel="stylesheet" href="css/02-pedido.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Formulario de Pedido</h1>
+			<form action="procesar_pedido.php" method="post">
+				<label for="nombre">Nombre:</label>
+				<input type="text" id="nombre" name="nombre" required />
+				<!-- Lista de productos -->
+				<label for="producto">Producto:</label>
+				<select name="" id="" required>
+					<option value="calcetines">Calcetines</option>
+					<option value="camisas">Camisas</option>
+					<option value="sudaderas">Sudaderas</option>
+					<option value="pantalones">Pantalones</option>
+					<option value="chaquetas">Chaquetas</option>
+				</select>
+
+				<label for="cantidad">Cantidad:</label>
+				<input type="number" id="cantidad" name="cantidad" min="1" required />
+				<label for="direccion">Dirección de Envío:</label>
+				<select name="" id="" size="6" required>
+					<option value="avila">Ávila</option>
+					<option value="burgos">Burgos</option>
+					<option value="leon">Leon</option>
+					<option value="palencia">Palencia</option>
+					<option value="salamanca">Salamanca</option>
+					<option value="segovia">Segovia</option>
+					<option value="soria">Soria</option>
+					<option value="valladolid">Valladolid</option>
+					<option value="zamora">Zamora</option>
+				</select>
+
+				<label for="telefono">Teléfono:</label>
+				<input type="text" id="telefono" name="telefono" />
+
+				<!-- Métodos de pago -->
+				<label for="metodo_pago">Método de Pago:</label>
+				<select name="" id="" required>
+					<option value="vacio" selected>Seleccione método de pago:</option>
+					<option value="efectivo">Efectivo</option>
+					<option value="tarjeta">Tarjeta</option>
+					<option value="Bizum">Bizum</option>
+				</select>
+				<br /><br />
+				<input type="submit" value="Realizar Pedido" class="btnPedido" />
+			</form>
+		</div>
+	</body>
+</html>

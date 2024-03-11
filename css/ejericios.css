@@ -19,18 +19,16 @@ h1 {
 
 .container {
 	text-align: justify;
-
 	margin: auto;
 	padding: 50px;
-	/* width: 900px; */
 	display: flex;
-	gap: 20px;
+	flex-flow: row wrap;
+	gap: 10px;
 	justify-content: space-around;
-
-	flex-direction: row;
 }
 .comun {
-	flex: 1 1 0;
+	width: 30%;
+	/* flex: 1 1 0; */
 	text-align: center;
 	padding: 20px;
 	display: flex;
@@ -44,7 +42,9 @@ h1 {
 
 .uno ul,
 .dos ul,
-.tres ul {
+.tres ul,
+.cuatro ul,
+.cinco ul {
 	text-align: justify;
 	margin-bottom: 30px;
 }
@@ -57,6 +57,12 @@ h1 {
 }
 .tres {
 	background-color: orangered;
+}
+.cuatro {
+	background-color: rgb(23, 107, 110);
+}
+.cinco {
+	background-color: rgb(110, 23, 59);
 }
 .comun h2 {
 	color: whitesmoke;
@@ -86,4 +92,8 @@ h1 {
 
 .button a:hover {
 	color: white;
+}
+
+span {
+	text-decoration: underline;
 }

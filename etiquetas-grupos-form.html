@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Etiquetas de grupos</title>
 		<link rel="stylesheet" href="css/etiquetas-grupos.css" />
+		<style></style>
 	</head>
 	<body>
 		<main class="container">
@@ -41,6 +42,11 @@
 				<!-- Lista desplegable usando select y options -->
 				<label for="">Días de la semana</label>
 				<br />
+				<!--
+					Size: indica el tamaño de los valores a mostrar
+					multiple: Permite realizar multiples selecciones. Pulsando la tecla Ctrl
+					selected: selecciona la opción por defecto
+				-->
 				<select name="dia" id="" size="5" multiple>
 					<option value="vacio" selected>---</option>
 					<option value="lunes">Lunes</option>
@@ -52,13 +58,21 @@
 					<option value="domingo">Domingo</option>
 				</select>
 				<hr />
-				<!-- Lista de opciones con grupos -->
+
+				<!-- Lista de opciones con grupos por categorias -->
+				<!-- ------------------------------- -->
+
 				<label for="">Paises del Mundo</label>
 				<br />
-				<select name="pais" id="" size="10" multiple>
+				<!--
+					Size: indica el tamaño de los valores a mostrar
+					optgroup: Permite agrupar òpciones por "categorias"
+					label: Título de la "categoria"
+				-->
+				<select name="pais" id="" size="10">
 					<optgroup label="Europa">
 						<option value="españa">España</option>
-						<option value="monaco">Mónaco</option>
+						<option value="portugal">Portugal</option>
 					</optgroup>
 					<optgroup label="Latinoamerica">
 						<option value="peru">Perú</option>
@@ -71,7 +85,10 @@
 					</optgroup>
 				</select>
 				<hr />
+
 				<!-- Grupos de elementos -->
+				<!-- ------------------------------- -->
+
 				<fieldset>
 					<legend>Datos personales</legend>
 					<label for="">Nombre: </label>
@@ -104,7 +121,10 @@
 					<input type="text" name="provincia" id="" placeholder="Valladolid" />
 				</fieldset>
 				<hr />
+
 				<!-- Botones de envio -->
+				<!-- ------------------------------- -->
+
 				<input type="submit" value="Enviar" class="btnEnviar" />
 			</form>
 		</main>
