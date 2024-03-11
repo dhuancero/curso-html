@@ -1,0 +1,14 @@
+.container {
+	width: 600px;
+	margin: auto;
+}
+
+.form-grupo {
+	border: solid 1px;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+}

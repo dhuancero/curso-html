@@ -59,11 +59,16 @@ a:hover {
 	width: 100vw;
 	height: 100vh;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 
 .container-field {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	/* border: solid 1px red; */
+	flex-flow: row wrap;
+	text-align: center;
+	gap: 20px;
+}
+.container-field section {
+	flex: 1 1 0;
 }

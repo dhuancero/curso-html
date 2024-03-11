@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Etiquetas de grupos</title>
+		<link rel="stylesheet" href="css/etiquetas-grupos.css" />
+	</head>
+	<body>
+		<main class="container">
+			<h1>Listas y Grupos de formularios</h1>
+			<hr />
+			<form
+				class="form-grupo"
+				action=""
+				method="get"
+				enctype="multipart/form-data">
+				<!-- Añadir archivos -->
+				<label for="">Añadir archivo</label>
+				<input type="file" name="archivo" id="" />
+				<hr />
+				<!-- Lista de datos -->
+				<label for="">Tecnología:</label>
+				<input type="text" name="tecnologia" list="tecnologia" />
+
+				<datalist id="tecnologia">
+					<option value="html"></option>
+					<option value="css"></option>
+					<option value="javascript"></option>
+				</datalist>
+
+				<hr />
+
+				<!-- Lista desplegable simple usando select y options -->
+				<label for="">Sexo:</label>
+				<select name="sexo" id="">
+					<option value="hombre">Hombre</option>
+					<option value="mujer">Mujer</option>
+				</select>
+				<hr />
+				<!-- Lista desplegable usando select y options -->
+				<label for="">Días de la semana</label>
+				<br />
+				<select name="dia" id="" size="5" multiple>
+					<option value="vacio" selected>---</option>
+					<option value="lunes">Lunes</option>
+					<option value="martes">Martes</option>
+					<option value="miercoles">Miércoles</option>
+					<option value="jueves">Jueves</option>
+					<option value="viernes">viernes</option>
+					<option value="sabado">Sábado</option>
+					<option value="domingo">Domingo</option>
+				</select>
+				<hr />
+				<!-- Lista de opciones con grupos -->
+				<label for="">Paises del Mundo</label>
+				<br />
+				<select name="pais" id="" size="10" multiple>
+					<optgroup label="Europa">
+						<option value="españa">España</option>
+						<option value="monaco">Mónaco</option>
+					</optgroup>
+					<optgroup label="Latinoamerica">
+						<option value="peru">Perú</option>
+						<option value="colombia">Colombia</option>
+						<option value="venezuela">Venezuela</option>
+					</optgroup>
+					<optgroup label="Asia">
+						<option value="china">China</option>
+						<option value="japon">Japon</option>
+					</optgroup>
+				</select>
+				<hr />
+				<!-- Grupos de elementos -->
+				<fieldset>
+					<legend>Datos personales</legend>
+					<label for="">Nombre: </label>
+					<input type="text" name="nombre" id="" />
+					<hr />
+					<label for="">Apellidos:</label>
+					<input type="text" name="apellido" id="" />
+					<hr />
+					<label for="">Edad:</label>
+					<input type="number" name="edad" id="" min="0" max="100" />
+					<hr />
+				</fieldset>
+
+				<fieldset>
+					<legend>Dirección</legend>
+					<label for="">Tipo:</label>
+					<select name="tipo-calle" id="">
+						<option value="calle">Calle</option>
+						<option value="plaza">Plaza</option>
+						<option value="avenida">Avenida</option>
+					</select>
+					<hr />
+					<label for="">Dirección:</label>
+					<input type="text" name="direc" id="" />
+					<hr />
+					<label for="">Código postal:</label>
+					<input type="text" name="cp" id="" maxlength="5" />
+					<hr />
+					<label for="">Provincia:</label>
+					<input type="text" name="provincia" id="" placeholder="Valladolid" />
+				</fieldset>
+				<hr />
+				<!-- Botones de envio -->
+				<input type="submit" value="Enviar" class="btnEnviar" />
+			</form>
+		</main>
+	</body>
+</html>
