@@ -1,0 +1,56 @@
+/* Estilos para el formulario */
+body {
+	font-family: Arial, sans-serif;
+}
+h1 {
+	text-align: center;
+}
+.formulario {
+	width: 50%;
+	margin: 0 auto;
+	border: 2px solid #ccc;
+	padding: 20px;
+	border-radius: 10px;
+}
+.secciones {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.secciones legend {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #333;
+}
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+.ancho-comun,
+select {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+.content-btn {
+	display: flex;
+	justify-content: center;
+}
+.btnEnviar {
+	background-color: brown;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 20px;
+	font-size: large;
+}
+.btnEnviar:hover {
+	background-color: brown;
+}

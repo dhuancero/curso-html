@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulario de Registro</title>
+		<link rel="stylesheet" href="css/examen.css" />
+	</head>
+	<body>
+		<h1>Formulario de Registro</h1>
+		<form action="procesar_formulario.php" class="formulario" method="POST">
+			<!-- Inicio sección Información personal  -->
+			<fieldset class="secciones">
+				<legend>Información Personal</legend>
+				<label for="nombre">Nombre completo:</label>
+				<input
+					type="text"
+					class="ancho-comun"
+					id="nombre"
+					name="nombre"
+					required />
+				<label for="email">Correo electrónico:</label>
+				<input
+					type="email"
+					class="ancho-comun"
+					id="email"
+					name="email"
+					required />
+				<label for="telefono">Teléfono:</label>
+				<input type="text" class="ancho-comun" id="telefono" name="telefono" />
+				<label for="genero">Género:</label>
+				<select id="genero" name="genero" required>
+					<option value="">Seleccionar Género</option>
+					<option value="masculino">Masculino</option>
+					<option value="femenino">Femenino</option>
+					<option value="otro">Otro</option>
+				</select>
+			</fieldset>
+			<!-- Fin sección Información personal  -->
+
+			<!-- Inicio sección: Información de la cuenta  -->
+			<fieldset class="secciones">
+				<legend>Información de la Cuenta</legend>
+				<label for="username">Nombre de usuario:</label>
+				<input
+					type="text"
+					class="ancho-comun"
+					id="username"
+					name="username"
+					required />
+				<label for="password">Contraseña:</label>
+				<input
+					type="password"
+					class="ancho-comun"
+					id="password"
+					name="password"
+					required />
+				<label for="confirmar_password">Confirmar Contraseña:</label>
+				<input
+					type="password"
+					class="ancho-comun"
+					id="confirmar_password"
+					name="confirmar_password"
+					required />
+			</fieldset>
+			<!-- Fin sección Información de la cuenta  -->
+
+			<!-- Inicio sección Dirección de envío  -->
+			<fieldset class="secciones">
+				<legend>Dirección de Envío</legend>
+				<label for="direccion">Dirección:</label>
+				<input
+					type="text"
+					class="ancho-comun"
+					id="direccion"
+					name="direccion" />
+				<label for="ciudad">Ciudad:</label>
+				<select id="ciudad" name="ciudad" required>
+					<option value="">Seleccionar Ciudad</option>
+					<option value="madrid">Valladolid</option>
+					<option value="barcelona">Palencia</option>
+					<option value="valencia">Ávila</option>
+					<option value="sevilla">Segovia</option>
+					<!-- Agrega más opciones según sea necesario -->
+				</select>
+				<label for="codigo_postal">Código Postal:</label>
+				<input
+					type="text"
+					class="ancho-comun"
+					id="codigo_postal"
+					name="codigo_postal" />
+				<label for="pais">País:</label>
+				<select id="pais" name="pais" required>
+					<option value="">Seleccionar País</option>
+					<option value="españa">España</option>
+					<option value="francia">Francia</option>
+					<option value="alemania">Alemania</option>
+					<option value="italia">Italia</option>
+					<!-- Agrega más opciones según sea necesario -->
+				</select>
+			</fieldset>
+			<!-- Fin sección Dirección de envío  -->
+
+			<!-- Inicio sección Acepto condiciones  -->
+			<fieldset class="secciones">
+				<input type="checkbox" name="checkbox" id="checkbox" required />
+				<span for="checkbox">Acepto las condiciones</span>
+				<br />
+			</fieldset>
+			<!-- Fin sección Acepto condiciones  -->
+
+			<div class="content-btn">
+				<input class="btnEnviar" type="submit" value="Registrarse" />
+			</div>
+		</form>
+	</body>
+</html>
