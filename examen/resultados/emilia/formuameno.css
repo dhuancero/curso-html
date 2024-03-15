@@ -1,0 +1,25 @@
+body {
+	font-family: Courier, monospace; 
+	background-color: #f5cbcb;
+}
+.container {
+	max-width: 450px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: rgb(179, 107, 173);
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.btnenviar {
+    background-color: #3b3db1;
+    color: #f7f5f5;
+    padding: 5px;;
+    border-radius: 3px;
+}
+.btnenviar:hover{
+    background-color:aqua;
+	text-align: center
+}
+.center {
+    text-align: center;
+}

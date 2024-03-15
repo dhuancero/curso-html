@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="exaformestilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Pilar Espinosa" content="ejercicio examen de formularios">
+</head>
+
+<!--Informacion Personal-->
+
+<body>
+    <form action="" method="post" class="ejercicio examen formularios">
+        <label for="">
+            <h1 class="h1-examen formularios">Formulario de registro</h1>
+        </label>
+        <!--informacion personal-->
+
+        <label for="">Nombre</label><br>
+        <input type="nombre" name="nombre" id="nombre" required><br>
+        <label for="">Apellidos</label><br>
+        <input type="apellidos" name="apellidos" id="apellidos" required><br>
+        <label for="">Correo electronico</label><br>
+        <input type="email" name="email" id="email" required><br>
+        <label for="">Contraseña</label><br>
+        <input type="password" name="contraseña" id="" class="" required><br>
+        <label for="">Telefono</label><br>
+        <input type="text" name="" id=""><br>
+        <label for="">Genero</label>
+        <select name="" id="">
+            <option value="">Masculino</option>
+            <option value="">Femenino</option>
+            <option value="">Otro</option>
+        </select>
+
+        <!--Informacion de la cuenta-->
+
+        <label for=""></label><br>
+        <label for="">Nombre de usuario</label><br>
+        <input type="nombre" name="nombre" id="nombre" required><br>
+        <label for="">Contraseña</label><br>
+        <input type="password" name="" id="" class="" required><br>
+        <label for="">Confirmar contraseña</label><br>
+        <input type="password" name="" id="" class="" required><br>
+
+        <!--Direccion de envio-->
+
+        <label for="">Direccion</label><br>
+        <select name="" id="" size="">
+            <optgroup label="Calle">
+                <option value="">Calle</option>
+                <option value="">Avenida</option>
+                <option value="">Plaza</option>
+            </optgroup>
+        </select>
+        <label for="">Numero</label><br>
+        <input type="number" name="numero" id="" required><br>
+        <label for="">Piso</label><br>
+        <input type="text" name="" id="" required><br>
+        <label for="">Puerta</label><br>
+        <input type="text" name="" id="" required><br>
+        <label for="">Esacalera</label><br>
+        <input type="text" name="" id="" required><br>
+        <label for="">Codigo Postal</label><br>
+        <input type="text" name="" id="" required><br>
+
+        <label for="">Ciudad</label><br>
+        <select name="" id="" size="">Castilla y Leon<br>
+            <optgroup label="">
+                <option value="">Zamora</option>
+                <option value="">Salamanca</option>
+                <option value="">Valladolid</option>
+                <option value="">Segovia</option>
+                <option value="">Burgos</option>
+                <option value="">Soria</option>
+            </optgroup>
+        </select>
+
+        <label for=""> Pais</label><br>
+        <select name="" id="" size="">
+            <optgroup label="Pais">
+                <option value="">España</option>
+                <option value="">Alemania</option>
+                <option value="">Francia</option>
+                <option value="">Portugal</option>
+            </optgroup>
+        </select>
+
+            <!--Casilla de verificacion-->
+
+            <form action="/submit">
+                <label for="suscrito">Acepto todas las condiciones</label>
+                <input type="checkbox" id="suscrito" name="suscrito" value="boletin"><br>
+                <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>

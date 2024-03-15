@@ -1,0 +1,33 @@
+form{
+  border:solid 1px;
+  border-radius: 5px;
+  width: 500px;
+  padding: 10px;
+  color: rgb(29, 158, 109);
+
+}
+
+h1{
+  color: blue;
+  width: 520px;
+}
+
+h2{
+  color: brown;
+  
+}
+
+h3{
+  color: brown;
+
+}
+
+h4{
+  color: brown;
+}
+
+h5{
+  color: black;
+}
+
+

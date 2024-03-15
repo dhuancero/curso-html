@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexander Checasaca Salazar">
+    <link rel="stylesheet" href="style_form_prac.css">
+    <title>Formulario de Registro</title>
+</head>
+
+<body>
+    <form action="">
+    <div class="recipiente">        
+        <h1>Formulario de Registro</h1>
+        <!--Información personal-->
+        <fieldset>
+            <legend>Información Personal: </legend>
+            <div>
+                <label for="nombre">Nombre completo: </label><br>
+                <input type="text" id=" nombre" name="nombre" required/><br>
+                <label for="correo">Correo electrónico: </label><br>
+                <input type="email" id=" nombre" name="correo" required/><br>
+                <label for="teléfono">Teléfono: </label><br>
+                <input type="tel" id=" nombre" name="telefono"><br>
+                <label for="teléfono">Género: </label><br>
+                <select name="genero" id="">
+                    <option value="">Selecciona género</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Sin especificar</option>
+                </select><br>
+            </div>
+        </fieldset><br>
+        <!--Información de la cuenta-->
+        <fieldset>
+            <legend>Información de la cuenta: </legend>
+            <div>
+                <label for="nombre">Nombre de usuario: </label><br>
+                <input type="text" id=" nombre" name="usuario" required/><br>
+                <label for="nombre">Contraseña: </label><br>
+                <input type="password" id=" nombre" name="contraseña" required/><br>
+                <label for="nombre">Confirmar contraseña: </label><br>
+                <input type="password" id=" nombre" name="contraseña" required/><br>
+            </div>
+        </fieldset><br>
+        <!--Dirección de envío--> 
+        <fieldset>
+            <legend>Dirección de envío: </legend>
+            <div>
+                <label for="nombre">Dirección: </label>
+                <input type="text" id=" nombre" name="address" required/><br>
+                <label for="Ciudad">Ciudad: </label><br>
+                <select name="ciudad" id="">
+                    <option value="">Selecciona ciudad</option>
+                    <option value="">Valladolid</option>
+                    <option value="">Bogotá</option>
+                    <option value="">Lima</option>
+                    <option value="">Caracas</option>
+                    <option value="">Miami</option>
+                </select><br>
+                <br>
+                <label for="">Código postal</label><br>
+                <input type="number" name="cp" maxlength="5"><br>
+                <label for="">País:</label><br>
+                <select name="ciudad" id="" required>
+                    <option value="">Selecciona país</option>
+                    <option value="">España</option>
+                    <option value="">Colombia</option>
+                    <option value="">Perú</option>
+                    <option value="">Venezuela</option>
+                    <option value="">USA</option>
+                </select><br>
+            </div>
+        </fieldset><br>
+        <!--Casilla de verificación-->
+        <div class="terminos">
+        <input type="checkbox" name="terminos" id="terminos"/>Acepto los términos y condiciones.<br>
+        </div><br>
+        <button type="submit">Registrarse</button>
+    </div>
+    </form>
+</body>
+</html>

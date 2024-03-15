@@ -1,0 +1,65 @@
+body{
+  font-family: Arial, sans-serif;
+  background-color: #9c19e7;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  color: #000000;
+  font-size: 28px;
+}
+
+fieldset{
+  margin: auto;
+  width: 75%;
+  border: #ffffff solid thin;
+}
+
+input{
+  width: 100%;
+  border: none;
+  font-size: 12px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 1px;
+  background-color: #858282;
+  color: #ffffff;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 30px;
+}
+
+select{
+  width: 100%;
+  background-color: #858282;
+  color: #ffffff;
+}
+
+legend{
+  font-size: 20px;
+}
+
+button{
+  margin: auto;
+  width: 75%;
+  display: block;
+}
+  
+
+.terminos{
+  margin: auto;
+  width: 75%;
+  border: #ffffff solid thin;
+}
+
+.recipiente{
+  margin: auto;
+  border: #ffffff solid thin;
+  display:block;
+  height: auto;
+  width:50%;
+  padding: 2%;
+}
+
+

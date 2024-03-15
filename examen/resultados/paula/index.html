@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.5" />
+		<title>Formulario de Registro</title>
+		<link rel="stylesheet" href="registro.css" />
+	</head>
+	<body>
+        <div class="container">
+            <h1>Formulario de Registro</h1>
+        <form action="Registrarse.php" method="post" class="form-contact">
+
+        <fieldset class="fieldset"> <!--el contenedor-->
+        <legend>Información Personal</legend>
+		    <label for="nombre">Nombre completo:</label>
+			    <input type="text" id="nombre" name="nombre" required/> <!--obilgatorio de rellenar-->
+			<label for="email">Correo electrónico:</label>
+			    <input type="email" id="email" name="email" required />
+            <label for="telefono">Teléfono:</label>
+				<input type="text" id="telefono" name="telefono" />
+            <!-- Lista de géneros -->
+				<label for="genero">Género:</label>
+                <br></br>
+				<select class="style" name="" id="" required>
+					<option value="Selecciona genero">Selecciona Género</option>
+                    <option value="masculino">Masculino</option>
+					<option value="femenino">Femenino</option>
+					<option value="otros">Otros</option>
+                </select>
+        </fieldset>
+
+        <fieldset class="fieldset">
+        <legend>Información de la cuenta</legend>
+            <label for="nombre">Nombre de usuario:</label>
+			    <input type="text" id="nombre" name="nombre" required/> <!--campo de texto-->
+                <label>Contraseña</label>
+                <input type="password" required />
+            <label>Confirmar Contraseña</label>    
+                <input type="password" required />
+    
+        </fieldset>
+        <fieldset class="fieldset">       
+        <legend>Dirección de envío</legend>
+            <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion"> <!--campo de texto-->
+            <!--Lista de ciudades-->
+            <label for="ciudad">Ciudad:</label>
+            <br></br>
+				<select class="style"name="" id="" required>
+					<option value="Leon">León</option>
+					<option value="Zamora">Zamora</option>
+					<option value="Salamanca">Salamanca</option>
+                    <option value="Valladolid">Valladolid</option>
+                    <option value="Palencia">Palencia</option>
+                    <option value="Burgos">Soria</option>
+                    <option value="Segovia">Segovia</option>
+                    <option value="Avila">Ávila</option>
+                </select>
+            <br></br>
+            <label for="codigo postal">Código postal:</label>
+				<input type="text" id="codigo postal" name="codigo postal" />
+            <!--Lista de países-->
+            <label for="pais">País:</label>
+            <br></br>
+				<select class="style" name="" id="" required>
+					<option value="Alemania">Alemania</option>
+					<option value="Belgica">Bélgica</option>
+					<option value="Croacia">Croacia</option>
+                    <option value="Dinamarca">Dinamarca</option>
+                    <option value="España">España</option>
+                    <option value="Finlandia">Finlandia</option>
+                    <option value="Holanda">Holanda</option>
+                    <option value="Irlanda">Irlanda</option>
+                    <option value="Portugal">Portugal</option>
+                </select>
+            <!--la casilla de verificación-->
+            <br></br>
+            <input type="checkbox" name="checkbox" id="checkbox" required />
+            <label for="checkbox"><B>Acepto todas las condiciones</B></label>
+				
+        </fieldset>
+            <br></br>
+            <button class="btn">Registrarse</button>
+
+        </form>
+      </body>
+        </html>
+    
+            
+            
+
+            

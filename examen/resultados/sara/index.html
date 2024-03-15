@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen formularios</title>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <!--para las tildes-->
+    <meta name="author" content="sara escudero">
+    <link rel="stylesheet" type="text/css" href="style.examen.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Formulario de Registro</h1>
+        <form action="">
+            <fieldset>
+                <legend>Información personal</legend>
+                <br>
+                <label for="">Nombre Completo*</label>
+                <br>
+                <input type="text" name="" id="" required placeholder="nombre y apellidos">
+                <br>
+                <label for="">Correo electrónico*</label>
+                <br>
+                <input type="email" name="" id="" required>
+                <br>
+                <label for="">Teléfono</label>
+                <br>
+                <input type="tel" name="" id="" maxlength="9">
+                <br>
+                <label for="">Género</label>
+                <br>
+                <select name="" id="" required class="genero">
+                    <option value="" selected>Selecione género</option>
+                    <option value="">Masculino</option>
+                    <option value="">Femenino</option>
+                    <option value="">Otro</option>
+                </select>
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Información de la cuenta</legend>
+                <br>
+                <label for="">Nombre de ususario* </label>
+                <input type="text" name="" id="" required>
+                <br>
+                <label for="">Contraseña*</label>
+                <input type="password" name="" id="" required placeholder="combina números, letras y simbolos">
+                <br>
+                <label for="">Confirmar contraseña*</label>
+                <input type="password" name="" id="" required placeholder="combina números, letras y simbolos">
+
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Dirección de envío</legend>
+                <br>
+                <label for="">Dirección*</label>
+                <input type="text" name="" id="" required placeholder="calle, número y piso">
+                <br>
+                <label for="">Ciudad*</label>
+                <input type="text" name="ciudad" list="ciudad" required />
+                <!--mismo nombre a id y name para que se relacionen-->
+                <datalist id="ciudad">
+                    <option value="Valladolid"></option>
+                    <option value="Segovia"></option>
+                    <option value="Ávila"></option>
+                    <option value="Burgos"></option>
+                    <option value="Salamanca"></option>
+                    <option value="Soria"></option>
+                    <option value="León"></option>
+                    <option value="Zamora"></option>
+                    <option value="Palencia"></option>
+                </datalist>
+                <br>
+                <label for="">Código postal</label>
+                <input type="text" name="" id="" maxlength="5" placeholder="47002">
+                <br>
+                <label for="">País*</label>
+                <br>
+                <select name="" id="" size="4" required class="paises">
+                    <optgroup label="Europa">
+                        <option value="">España</option>
+                        <option value="">Francia</option>
+                        <option value="">Alemania</option>
+                        <option value="">Italia</option>
+                        <option value="">Portugal</option>
+                    </optgroup>
+                    <optgroup label="America">
+                        <option value="">EEUU</option>
+                        <option value="">Argentina</option>
+                        <option value="">Chile</option>
+                        <option value="">Colombia</option>
+                        <option value="">Mexico</option>
+                    </optgroup>
+                    <optgroup label="Africa">
+                        <option value="">Marruecos</option>
+                        <option value="">Egipto</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <br>
+            <label for="">Acepto todas las condiciones</label>
+            <input type="checkbox" name="valor" id="" required>
+            <br>
+            <br>
+            <input type="submit" value="Registrar" />
+            <br>
+            <br>
+            <input type="submit" value="Borrar" />
+        </form>
+        <br>
+        <p>Los campos marcados con * son obligatorios</p>
+    </div>
+</body>

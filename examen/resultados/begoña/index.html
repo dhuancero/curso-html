@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="autor" content="begoña alcala perez">
+	<title>Formulario de Contacto</title>
+	<link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+	<div class="container">
+		<h1>informacion personal</h1>
+		<form action="procesar_contacto.php" method="post">
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" required />
+			<br>
+			<label for="email">Correo Electrónico:</label>
+			<input type="email" id="email" name="email" required />
+			<br>
+			<label for="telefono">Teléfono:</label>
+			<input type="text" id="telefono" name="telefono" />
+			<br>
+			<label for="genero">genero:</label>
+			<select name="" id="" required>
+				<option value="masculino">masculino</option>
+				<option value="femenino">femenino</option>
+
+	</div>
+	<hr>
+	<div class="container">
+		<h1>informacion de la cuenta</h1>
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" required />
+		<br>
+		<label for="contraseña">contraseña</label>
+		<input type="password" id="contraseña" name="contraseña" required />
+		<br>
+		<label for="contraseña">contraseña</label>
+		<input type="password" id="contraseña" name="contraseña" required />
+		<br>
+	</div>
+	<div class="container">
+		<form action="procesar_contacto.php" method="post">
+			<h1>dirección de envío</h1>
+			<label for="direccion">Dirección de Envío:</label>
+			<select name="" id="" size="6" required>
+				<option value="avila">Ávila</option>
+				<option value="burgos">Burgos</option>
+				<option value="leon">Leon</option>
+				<option value="palencia">Palencia</option>
+				<option value="salamanca">Salamanca</option>
+				<option value="segovia">Segovia</option>
+				<option value="soria">Soria</option>
+				<option value="valladolid">Valladolid</option>
+				<option value="zamora">Zamora</option>
+			</select>
+			<div>
+		    <br>
+			<label for="codigo postal">codigo postal</label>
+			<input type="text" id="codigo postal" name="codigo postal" required>
+			<br>
+			</div>
+			<div>
+				<h1>pais</h1>
+			<label for="direccion"></label>
+			<select name="" id="" size="6" required>
+				<option value="avila">españa</option>
+				<option value="burgos">francia</option>
+				<option value="leon">italia</option>
+				<option value="palencia">alemania</option>
+				<option value="salamanca">mexico</option>
+				<option value="segovia">polonia</option>
+				<option value="soria">rusia</option>
+				<option value="valladolid">londres</option>
+				<option value="zamora">peru</option>
+			</div>
+			</select>
+		
+	</div>
+	<br>
+	<div>
+		<label for="acepta las condiciones">acepta las condiciones</label>
+		<input type="checkbox" id="acepta todas las condiciones" name="acepta todas las condiciones">
+	</div>
+	<div>
+		<input type="submit" value="enviar">
+	</div>
+</form>
+</body>
+
+</html>

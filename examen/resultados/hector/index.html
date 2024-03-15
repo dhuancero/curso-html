@@ -1,0 +1,83 @@
+<DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Formulario de registro</title>
+      <link rel="stylesheet" href="hector-examen-formulario.css" />
+    </head>
+
+    <body>
+      <h1>Formulario de registro</h1>
+      <form action="" method="post">
+        <!--etiqueta texto-->
+        <label for="Aqui va un texto"></label>
+        <input type="text" name="" id="" placeholder="introduce tu nombre" />
+        <hr />
+
+        <fieldset>
+          <h2><legend>Información personal</legend></h2>
+          <label for="">Nombre completo</label>
+          <input type="nombre" name="" id="" required />
+          <hr />
+          <label for="">Correo electrónico</label>
+          <input type="correo electróico" name="" id="" required />
+          <hr />
+          <label for="">Teléfono</label>
+          <input type="teléfono" name="" id="" maxlength="9" />
+          <hr />
+          <label for="">Género</label>
+          <input type="género" name="" id="" />
+          <select name="" id="">
+            <option value="">Masculino</option>
+            <option value="">Femenino</option>
+            <option value="">Otro</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <h3><legend>Información de la cuenta</legend></h3>
+          <label for="">Nombre de usuario</label>
+          <input type="nombre" name="" id="" required />
+          <hr />
+          <label for="">Contraseña</label>
+          <input type="contraseña" name="" id="" required />
+          <hr />
+          <label for="">Confirmar contraseña</label>
+          <input type="confirmar contraseña" name="" id="" required />
+        </fieldset>
+        <fieldset>
+          <h4><legend>Dirección de envío</legend></h4>
+          <label for="">Dirección Ciudad</label>
+          <input type="dirección ciudad" name="" id="" required />
+          <select name="" id="">
+            <option value="">Valladolid</option>
+            <option value="">Madrid</option>
+            <option value="">Sevilla</option>
+            <option value="">A Coruña</option>
+            <option value="">Valencia</option>
+          </select>
+          <hr />
+          <label for="">Código Postal</label>
+          <input type="código postal" name="" id="" />
+          <hr />
+          <label for="">País</label>
+          <input type="país" name="" id="" required />
+          <select name="" id="">
+            <option value="">España</option>
+            <option value="">EEUU</option>
+            <option value="">Francia</option>
+            <option value="">Japón</option>
+            <option value="">Colombia</option>
+          </select>
+          <hr />
+          <h5><label for="">Acepto todas las condiciones</label></h5>
+          <input type="checkbox" name="" id="" />
+          <hr />
+          <input type="button" value="Registrarse" />
+          <hr />
+          <input type="button" value="Enviar" />
+        </fieldset>
+      </form>
+    </body>
+  </html>
+

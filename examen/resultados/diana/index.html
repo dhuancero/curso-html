@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diana Rodrí­guez">
+    <link rel="stylesheet" type="text/css" href="Hoja_estilo_exm_formulario.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>FORMULARIO DE REGISTRO</h1>
+    <form class="form" action="dddd@formularios.es" method="post">
+        <fieldset>
+            <legend>Información personal</legend><br><br>
+            <label for="nombre">* Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required /><br><br>
+            <label for="email">* Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Introduce tu correo" required /><br><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" maxlength="9" /><br><br>
+            <label for="genero">* Género</label><br>
+            <label for="">Masculino</label>
+            <input type="radio" name="valor" id="" required>
+            <label for="">Femenino</label>
+            <input type="radio" name="valor" id="" required>
+            <label for="">Otro</label>
+            <input type="radio" name="valor" id="" required><br><br>
+        </fieldset>
+        <hr>
+        <fieldset>
+            <legend>Información de la cuenta</legend><br><br>
+            <label for="nombre">* Nombre de usuario:</label>
+            <input type="text" id="nombre de usuario" name="nombre de usuario" required /><br><br>
+            <label for="">* Contraseña (5 caracteres)</label>
+            <input type="password" name="password" id="password" maxlength="5" required /><br><br>
+            <label for="">* Confirmar contraseña (5 caracteres)</label>
+            <input type="password" name="password" id="password" maxlength="5" required /><br><br>
+        </fieldset>
+        <hr>
+        </fieldset>
+        <fieldset>
+            <legend>Dirección de envío</legend><br><br>
+            <!--lista de ciudad-->
+            <label for="Ciudad">* Ciudad:</label>
+            <select class="Ciudad" name="" id="" size="1">
+                <option value="Ciudad" selected>Seleccione una ciudad</option>
+                <option value="ciudad">Valladolid</option>
+                <option value="Ciudad">Soria</option>
+                <option value="Ciudad">Burgos</option>
+                <option value="Ciudad">Palencia</option>
+            </select><br><br>
+            <!--codigo postal-->
+            <label for="cp">Código</label>
+            <input type="text" name="cp" id="cp" maxlength="5" minlength="5" required /><br><br>
+            <!--lista de paises-->
+            <label for="Ciudad">* País</label>
+            <select class="pais" name="" id="" size="1">
+                <option value="pais" selected>Seleccione un país</option>
+                <option value="pais">Colombia</option>
+                <option value="pais">España</option>
+                <option value="pais">Portugal</option>
+                <option value="pais">Alemania</option>
+            </select><br><br>
+        </fieldset>
+        <hr>
+        <!-- Grupos de elementos -->
+        </fieldset>
+        <fieldset>
+            <label for="checkbox">Acepto todas las condiciones</label>
+            <input type="checkbox" name="checkbox" id="checkbox" required /><br><br>
+        </fieldset><br><br>
+        <!-- Botones  -->
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Reiniciar" onclick="alert('Se ha reiniciado el formulario')" />
+    </form>
+    </fieldset>
+</body>
+
+</html>

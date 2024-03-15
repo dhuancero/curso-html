@@ -1,0 +1,72 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f9f9f9;
+}
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 40px;
+	background-color: #d4dffc;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+label {
+	font-weight: bold;
+  color: #0b028b;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea {
+	width: 90%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+input[type="submit"] {
+	background-color: #0b07f8;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	text-align: center;
+	/* margin: auto; */
+	width: 50%;
+}
+input[type="submit"]:hover {
+	background-color: #0278f7;
+}
+
+fieldset {
+	padding: 10px;
+	margin: 10px;
+	text-align: center;
+    color:#bb80f1;
+    border-color:#bb80f1;
+   
+}
+
+.genero{
+    width: 94%;
+	padding: 10px;
+	margin-bottom: 15px;
+	border: 1px solid #045280;
+	border-radius: 3px;
+}
+.paises{
+    width: 94%;
+	padding: 15px;
+	margin-bottom: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+h1{
+    color: rgb(13, 9, 253); font-size: xx-large; font-family: garamond; width: 100% ; 
+}
+p{
+    color: rgb(253, 44, 17); font-size: medium; font-family: garamond; width: 100% ; 
+}

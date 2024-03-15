@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="examen-formulario" />
+    <meta name="author" content="María Emilia Jofré Gutiérrez" />
+    <title>examen-formulario</title>
+    <link rel="stylesheet" href="formuameno.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formulario de Registro</h1>
+      <form action="">
+        <fieldset>
+          <!-- contenedor parecido al div content-->
+          <legend>Información de contacto</legend>
+          <label for="nombre">Nombre completo:</label>
+          <br />
+          <input type="text" id="nombre" name="nombre" required />
+          <br />
+          <label for="email">Correo Electrónico:</label>
+          <br />
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="telefono">Teléfono:</label>
+          <br />
+          <input type="text" id="telefono" name="telefono" maxlength="9" />
+          <br />
+          <label for="genero">Género</label>
+          <br />
+          <select name="" id="" required>
+            <option value="Genero" selected>Seleccione Género:</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+            <option value="Otro">Otro</option>
+          </select>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Información de la cuenta</legend>
+          <label for="nombre">Nombre de usuario</label>
+          <br />
+          <input type="text" id="nombre" name="nombre" required />
+          <br />
+          <label for="password">Contraseña</label>
+          <br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Coloque su contraseña"
+            required
+          />
+          <br />
+          <label for="password">Confirmar Contraseña</label>
+          <br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Repita su contraseña"
+            required
+          />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Dirección de envío</legend>
+          <label for="">Dirección</label>
+          <br />
+          <input type="text" id="direccion" name="direccion" required />
+          <br />
+          <label for="nombre">Ciudad</label>
+          <br />
+          <select name="" id="" required>
+            <option value="ciudad" selected>Seleccione Ciudad</option>
+            <option value="valladolid">Valladolid</option>
+            <option value="valencia">Valencia</option>
+            <option value="madrid">Madrid</option>
+          </select>
+          <br />
+          <label for="number">Código postal</label>
+          <br />
+          <input type="text" name="cp" id="text" maxlength="5" />
+          <br />
+          <label for="nombre">País</label>
+          <br />
+          <select name="" id="" required>
+            <option value="pais" selected>Seleccione País</option>
+            <option value="españa">España</option>
+            <option value="argentina">Argentina</option>
+            <option value="peru">Perú</option>
+          </select>
+        </fieldset>
+        <br />
+        <fieldset>
+          <label for="checkbox">Acepto las condiciones</label>
+          <input type="checkbox" name="checkbox" id="checkbox" required />
+        </fieldset>
+        <br />
+        <br />
+        <div class="center">
+          <input type="submit" class="btnenviar" value="Registrarse" />
+        </div>
+        <br />
+        <br />
+      </form>
+    </div>
+  </body>
+</html>

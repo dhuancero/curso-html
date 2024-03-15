@@ -1,0 +1,42 @@
+/*HOJA DE ESTILO EXAMEN FORMULARIO*/
+h1 {
+  text-align: center;
+  font-weight: bold;
+}
+
+
+legend {
+  font-weight: bold;
+  color: brown;
+}
+
+form {
+  text-align: justify;
+  border: 10px solid rgb(185, 182, 182);
+  border-radius: 5%;
+  margin: auto;
+  padding: 20px 20px;
+  /* Arriba, Derecha, Abajo, Izquierda */
+  display: flex;
+  /*flex: 1; hace que los elementos hijos ocupen todo el espacio disponible de manera equitativa*/
+  flex-flow: column wrap;
+  /*establece que los elementos hijos del contenedor flexible se colocarÃ¡n en una fila (de izquierda a derecha) y, si no caben en una sola fila, se envolverÃ¡n a la siguiente fila.*/
+  justify-content: space-around;
+  width: 500px;
+  background-color: rgb(245, 235, 99);
+}
+hr{
+  color: white;
+}
+.checkbox {
+  color: blue;
+  border-bottom: 1000px;
+  align-content: center;
+}
+fieldset {
+  border: 50%;
+  background-position: center;
+  margin: 10px 10px 10 px 10 px;
+  background-color: rgb(245, 240, 179);
+  border-radius: 15%;
+}
